@@ -1,1 +1,8 @@
-Respositório criado para a cadeira de Ambientes e Desenvolvimento de Software, na UNIFOR - Universidade de Fortaleza. Horário noite AB, terça e quinta. Avaliação 2
+### Entregável 4
+##### Exercício da Cadeira de Ambientes e Desenvolvimento de Software
+
+Nesta atividade aprendemos como usar a biblioteca jest para testes unitários.
+
+##### Testes do Jest
+
+![](/modeloTeste.png)
