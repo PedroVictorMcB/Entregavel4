@@ -5,4 +5,4 @@ Nesta atividade aprendemos como usar a biblioteca jest para testes unitários.
 
 ##### Testes do Jest
 
-![](/modeloTeste.png)
+![](/testeUnitarioFuncoes.png)
