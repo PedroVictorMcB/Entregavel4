@@ -56,8 +56,4 @@ public class Quicksort {
 
         return result;
     }
-
-    // private static void pressOrded() {
-    //     ordedNums = quicksort(desordedNums);
-    // }
 }
