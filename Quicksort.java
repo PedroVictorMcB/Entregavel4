@@ -8,14 +8,14 @@ public class Quicksort {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite a quantidade de números: ");
+        System.out.print("Digite a quantidade de numeros: ");
         int N = scanner.nextInt();
 
         makeArray(N);
 
-        System.out.println("Números Desordenados: " + desordedNums);
-        pressOrded();
-        System.out.println("Números Ordenados: " + ordedNums);
+        System.out.println("Numeros Desordenados: " + desordedNums);
+        ordedNums = quicksort(desordedNums);
+        System.out.println("Numeros Ordenados: " + ordedNums);
 
         scanner.close();
     }
@@ -24,7 +24,7 @@ public class Quicksort {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < N; i++) {
-            System.out.print("Digite o " + (i + 1) + "º número: ");
+            System.out.print("Digite o " + (i + 1) + " numero: ");
             int num = scanner.nextInt();
             desordedNums.add(num);
         }
@@ -32,20 +32,20 @@ public class Quicksort {
         scanner.close();
     }
 
-    private static List<Integer> quicksort(List<Integer> arr) {
-        if (arr.size() <= 1) {
-            return arr;
+    private static List<Integer> quicksort(List<Integer> array) {
+        if (array.size() <= 1) {
+            return array;
         }
 
-        int pivot = arr.get(0);
+        int pivot = array.get(0);
         List<Integer> left = new ArrayList<>();
         List<Integer> right = new ArrayList<>();
 
-        for (int i = 1; i < arr.size(); i++) {
-            if (arr.get(i) < pivot) {
-                left.add(arr.get(i));
+        for (int i = 1; i < array.size(); i++) {
+            if (array.get(i) < pivot) {
+                left.add(array.get(i));
             } else {
-                right.add(arr.get(i));
+                right.add(array.get(i));
             }
         }
 
@@ -57,7 +57,7 @@ public class Quicksort {
         return result;
     }
 
-    private static void pressOrded() {
-        ordedNums = quicksort(desordedNums);
-    }
+    // private static void pressOrded() {
+    //     ordedNums = quicksort(desordedNums);
+    // }
 }
