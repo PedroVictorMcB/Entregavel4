@@ -1,20 +1,18 @@
 function calcularMDC(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
-        return null; // Retorna null para indicar que os números não são válidos
+        return null; 
     }
 
-    // Calcula o MDC dos números inseridos
     return calcular(num1, num2);
 }
 
-// Função para calcular o MDC
-function calcular(a, b) {
-    while (b !== 0) {
-        let temp = b;
-        b = a % b;
-        a = temp;
+function calcular(num1, num2) {
+    while (num2 !== 0) {
+        let temp = num2;
+        num2 = num1 % num2;
+        num1 = temp;
     }
-    return a;
+    return num1;
 }
 
 module.exports = { calcularMDC, calcular };

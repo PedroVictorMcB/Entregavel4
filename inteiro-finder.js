@@ -4,5 +4,3 @@ function intFinder(arr) {
 }
   
 module.exports = intFinder;
-
-
